@@ -24,17 +24,9 @@ endif::[]
 
 
 
-[black big]*Ansible-lint*
+[black big]*Ansible Tower Demo*.  
 
-Ansible-lint is an open-source project that lints your Ansible code. The Docs state
-that it checks playbooks for practices and behavior that could potentially be improved.
-It can be installed with pip and run manually on single playbooks or set up in a pre-commit hook and ran when you attempt a
-commit on your repo from the CLI.
-
-
-The project can be found under the Ansible org on GitHub.
-
-https://github.com/ansible/ansible-lint
+Ansible Tower Demo can be delivered at any time. It will cover subects such as Projects and Git integration, Templates and how to run playbooks in Tower, Credentials and how to store them and save them in Tower, Surveys and how to attach them to playbooks, Schedules and hot to set playbooks on schedules. Automated tickets with ServiceNow, Network config auditing.
 
 
 
