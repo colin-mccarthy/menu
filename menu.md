@@ -13,12 +13,15 @@ An Ansible Tower Demo can be delivered at any time. It will cover subects such a
 ## Ansible Red Hat Enterprise Linux Workshop 
 Focused on automating Linux platforms like Red Hat Enterprise Linux
   
-  ## Network
+## Ansible Network Automation Workshop 
+Focused on router and switch platforms like Arista, Cisco, Juniper 
+
+## Ansible F5 Workshop 
+Focused on automation of F5 BIG-IP
   
-  ## Windows
+## DevOps (Quay)
   
-  ## DevOps (Quay)
-  
-  ## Security?
+## Ansible Security Automation
+Focused on automation of security tools like Check Point Firewall, IBM QRadar and the IDS Snort
 
 
