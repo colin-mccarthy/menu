@@ -6,14 +6,19 @@ An Ansible Tower Demo can be delivered at any time. It will cover subects such a
 
 
 
-## Ansible Workshops - remote 6 hours
+# Ansible Workshops - remote 6 hours
 
 Prerequists - requires a demo was given before the workshop takes place.
 
-    Linux
-    Network
-    Windows
-    DevOps (Quay)
-    Security?
+# Ansible Red Hat Enterprise Linux Workshop 
+  focused on automating Linux platforms like Red Hat Enterprise Linux
+  
+  # Network
+  
+  # Windows
+  
+  # DevOps (Quay)
+  
+  # Security?
 
 
