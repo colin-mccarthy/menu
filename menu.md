@@ -10,15 +10,15 @@ An Ansible Tower Demo can be delivered at any time. It will cover subects such a
 
 Prerequists - requires a demo was given before the workshop takes place.
 
-# Ansible Red Hat Enterprise Linux Workshop 
-  focused on automating Linux platforms like Red Hat Enterprise Linux
+## Ansible Red Hat Enterprise Linux Workshop 
+Focused on automating Linux platforms like Red Hat Enterprise Linux
   
-  # Network
+  ## Network
   
-  # Windows
+  ## Windows
   
-  # DevOps (Quay)
+  ## DevOps (Quay)
   
-  # Security?
+  ## Security?
 
 
