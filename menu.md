@@ -1,4 +1,4 @@
-![Red Hat Ansible Automation](images/Screen Shot 2020-03-09 at 4.11.21 PM.png)
+![Red Hat Ansible Automation](images/ScreenShot2020-03-09at4.11.21PM.png)
 
 
 
