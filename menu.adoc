@@ -1,0 +1,213 @@
+= {subject} [black]*Menu*
+:subject:
+:description:
+:doctype:
+:confidentiality:
+:listing-caption: Listing
+:toc:
+:toclevels: 6
+:sectnums:
+:chapter-label:
+:icons: font
+ifdef::backend-pdf[]
+:pdf-page-size: A4
+:source-highlighter: rouge
+:rouge-style: github
+endif::[]
+
+
+
+
+
+
+
+
+
+
+[black big]*Ansible-lint*
+
+Ansible-lint is an open-source project that lints your Ansible code. The Docs state
+that it checks playbooks for practices and behavior that could potentially be improved.
+It can be installed with pip and run manually on single playbooks or set up in a pre-commit hook and ran when you attempt a
+commit on your repo from the CLI.
+
+
+The project can be found under the Ansible org on GitHub.
+
+https://github.com/ansible/ansible-lint
+
+
+
+[black big]*GitHub Actions*
+
+GitHub Actions enables you to create custom workflows directly in your GitHub repository.
+
+One day I was on Twitter and noticed an Ansible-lint action was created by Stefan Stölzle.
+
+
+It can be found here on GitHub's actions marketplace.
+
+https://github.com/marketplace/actions/ansible-lint
+
+
+
+[black big]*My Ansible network repo*
+
+Let me  show you an example of what this would look like in production.
+Here I have a repo that has some Ansible playbooks for converting CSV files into  Cisco commands.
+There are some ASA firewall rules and some BGP peering commands etc..
+
+https://github.com/colin-mccarthy/ansible_csv
+
+I attempted to submit a pull request to make a change to one of the playbooks. The Ansible-lint Action kicked off
+and eventually detected an issue and returned a failed message, the pull request did not get successfully submitted.
+
+
+
+
+
+
+
+
+
+image:images/failed.jpeg[]
+
+I received an email notification as well, letting me know it had failed.
+
+
+image:images/email.jpeg[]
+
+
+
+
+
+[black big]*Setting it up*
+
+
+To use the action simply create an ansible-lint.yml (or choose custom *.yml name) in the [red]#.github/workflows/# directory.
+
+
+
+
+
+
+```
+name: Ansible Lint  # feel free to pick your own name
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Important: This sets up your GITHUB_WORKSPACE environment variable
+    - uses: actions/checkout@v2
+
+    - name: Lint Ansible Playbook
+      # replace "master" with any valid ref
+      uses: ansible/ansible-lint-action@v4.1.0
+      with:
+        # [required]
+        # Paths to ansible files (i.e., playbooks, tasks, handlers etc..)
+        # or valid Ansible directories according to the Ansible role
+        # directory structure.
+        # If you want to lint multiple ansible files, use the following syntax
+        # targets: |
+        #   playbook_1.yml
+        #   playbook_2.yml
+        targets: ""
+        # [optional]
+        # Arguments to be passed to the ansible-lint
+
+        # Options:
+        #   -q                    quieter, although not silent output
+        #   -p                    parseable output in the format of pep8
+        #   --parseable-severity  parseable output including severity of rule
+        #   -r RULESDIR           specify one or more rules directories using one or
+        #                         more -r arguments. Any -r flags override the default
+        #                         rules in ansiblelint/rules, unless -R is also used.
+        #   -R                    Use default rules in ansiblelint/rules in addition to
+        #                         any extra
+        #                         rules directories specified with -r. There is no need
+        #                         to specify this if no -r flags are used
+        #   -t TAGS               only check rules whose id/tags match these values
+        #   -x SKIP_LIST          only check rules whose id/tags do not match these
+        #                         values
+        #   --nocolor             disable colored output
+        #   --exclude=EXCLUDE_PATHS
+        #                         path to directories or files to skip. This option is
+        #                         repeatable.
+        #   -c C                  Specify configuration file to use. Defaults to ".ansible-lint"
+        args: ""
+```
+
+You can run the action on various events:
+
+```
+on: [push, pull_request]
+```
+
+
+
+image:images/workflow.jpeg[]
+
+
+
+
+
+
+
+
+
+
+[black big]*Pre Commit hooks*
+
+I would like to go a little deeper into linting by bringing up pre-commit hooks.
+
+Pre-commit hooks are little scripts ran locally on your machine, that can help identify issues before submission for code review.
+So when talking about the Ansible-lint action, it would really come in handy to lint the code before you submit your pull request.
+This would make sure you always pass. The GitHub action would just serve as the final step that guards the shared repo.
+If your using pre-commit hooks you should hypothetically never fail the gitHub action test.
+
+https://pre-commit.com
+
+To set this up on my MacBook I simply did a pip install.
+
+
+```
+pip install pre-commit
+```
+To set it up on your repo just make sure you...
+
+
+```
+pre-commit install
+```
+
+
+
+
+[black big]*Markdown badge*
+
+You can get a badge for your repo to show if it is passing the linting test.
+
+image:images/badge.jpeg[]
+
+
+
+
+
+
+
+
+|===
+|===
+
+
+|===
+
+|===
+TheNetwork.Engineer - Nov 24 2019  -  Colin McCarthy
+|===
