@@ -20,6 +20,7 @@ Focused on router and switch platforms like Arista, Cisco, Juniper
 Focused on automation of F5 BIG-IP
   
 ## DevOps (Quay)
+Focused on Containers and Quay GitOps
   
 ## Ansible Security Automation
 Focused on automation of security tools like Check Point Firewall, IBM QRadar and the IDS Snort
