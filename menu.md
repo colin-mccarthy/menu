@@ -19,6 +19,7 @@ An Ansible Tower Demo can be delivered at any time. It will cover subects such a
 
 ## Ansible Red Hat Enterprise Linux Workshop 
 Focused on automating Linux platforms like Red Hat Enterprise Linux
+- 5 hours
   
 ## Ansible Network Automation Workshop 
 Focused on router and switch platforms like Arista, Cisco, Juniper 
