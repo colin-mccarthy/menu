@@ -1,4 +1,4 @@
-![Red Hat Ansible Automation](images/menu.jpeg)
+![MENU](images/menu.jpeg)
 
 
 
