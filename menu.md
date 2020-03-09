@@ -12,7 +12,8 @@ An Ansible Tower Demo can be delivered at any time. It will cover subects such a
  - Schedules and how to set playbooks on schedules
  - Automated tickets with ServiceNow 
  - Network config auditing/compliance
-
+ - 45 minutes over BlueJeans
+ - Target Audience would be anyone interested in Ansible Tower
 
 
 # Workshops
