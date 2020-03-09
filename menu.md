@@ -22,21 +22,26 @@ An Ansible Tower Demo can be delivered at any time. It will cover subects such a
 ## Ansible Red Hat Enterprise Linux Workshop 
 Focused on automating Linux platforms like Red Hat Enterprise Linux
 - 5 hours
+- delivered virtually or onsite
   
 ## Ansible Network Automation Workshop 
 Focused on router and switch platforms like Arista, Cisco, Juniper 
 - 5 hours
+- delivered virtually or onsite
 
 ## Ansible F5 Workshop 
 Focused on automation of F5 BIG-IP
 - 3 hours
+- delivered virtually or onsite
   
 ## DevOps (Quay)
 Focused on Containers, Quay, and GitOps with Github
 - 6 hours
+- delivered virtually or onsite
   
 ## Ansible Security Automation
 Focused on automation of security tools like Check Point Firewall, IBM QRadar and the IDS Snort
 - 6 hours
+- delivered virtually or onsite
 
 
