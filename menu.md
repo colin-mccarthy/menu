@@ -2,7 +2,7 @@
 
 
 
-## Ansible Tower Demo
+## Ansible Tower Deep Dive
 
 An Ansible Tower Demo can be delivered at any time. It will cover subects such as 
  - Projects and Git integration
