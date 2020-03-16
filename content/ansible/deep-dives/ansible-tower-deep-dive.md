@@ -1,9 +1,12 @@
 # Ansible Tower Deep Dive
 
-> A demo of Ansible Tower, its key features, and potential integrations.
+A demo of Ansible Tower, its key features, and potential integrations.
 
-*duration*: 60 minutes
-*audience*: Infrastructure Engineers
+-   *duration*: 60 minutes
+-   *audience*: Infrastructure Engineers
+-   *category*: Deep Dive
+
+---
 
 ## Overview
 

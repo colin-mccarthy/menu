@@ -4,8 +4,9 @@
 
 A demo of Ansible Tower, its key features, and potential integrations.
 
-*duration*: 60 minutes
-*audience*: Infrastructure Engineers
+Audience: Infrastructure Engineers  
+Category: Deep Dive  
+Duration: 60 minutes  
 
 [(docs)](content/ansible/deep-dives/ansible-tower-deep-dive.md)
 
@@ -13,8 +14,9 @@ A demo of Ansible Tower, its key features, and potential integrations.
 
 Explore the software factory model of scaled software development to implement a trusted software supply chain and how it benefits a systems integrator’s internal IT services, its lines of business and ultimately the software’s end users.
 
-*duration*: 60 minutes
-*audience*: Software Engineers
+Audience: Software Engineers  
+Category: Webinar  
+Duration: 60 minutes  
 
 [(docs)](content/openshift/webinars/openshift-software-factory.md)
 
@@ -22,7 +24,8 @@ Explore the software factory model of scaled software development to implement a
 
 Red Hat OpenShift provides defense-in-depth from an infrastructure, developer workflow, and software supply chain perspective. This session introduces how this works and how it relates to the current approach to information security.
 
-*duration*: 90 minutes
-*audience*: Security Engineers
+Audience: Security Engineers  
+Category: Webinar  
+Duration: 90 minutes  
 
 [(docs)](content/openshift/webinars/openshift-for-security-engineers.md)
