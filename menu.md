@@ -50,4 +50,10 @@ Focused on automation of security tools like Check Point Firewall, IBM QRadar an
 - delivered virtually or onsite
 - Target Audience would be SecOps teams who have Splunk or Checkpoint Gear
 
+## OpenShift for Security Engineers
+
+Red Hat OpenShift provides defense-in-depth from an infrastructure, developer workflow, and software supply chain perspective. This session introduces how this works and how it relates to the current approach to information security.
+
+-  *audience*: Security Engineers
+-  *duration*: 90 minutes
 
